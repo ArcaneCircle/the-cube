@@ -4,3 +4,7 @@ node_modules/
 *.sublime-workspace
 
 export/
+dist/
+
+*.xdc
+*.txt
