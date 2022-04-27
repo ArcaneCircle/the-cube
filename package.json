@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "",
-  "dependencies": {},
+  "type": "module",
   "devDependencies": {
-    "rollup-plugin-babel-minify": "^5.0.0"
+    "@ffflorian/jszip-cli": "^3.1.6",
+    "vite": "^2.9.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c rollup.config.build.js && cp upup.min.js export/ && cp upup.sw.min.js export/ && cp index.html export/ && cp -R assets export/"
+    "dev": "vite --host --open",
+    "prebuild": "vite build",
+    "build": "pnpx jszip-cli -c .jsziprc.json",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/bsehovac/bsehovac.github.io/issues"
   },
-  "homepage": "https://github.com/bsehovac/bsehovac.github.io#readme"
+  "homepage": "https://github.com/M4ss1ck/webxdc-cube/blob/master/README.md"
 }
