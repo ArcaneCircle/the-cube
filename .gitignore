@@ -8,3 +8,7 @@ dist/
 
 *.xdc
 *.txt
+
+// created files
+assets/css/styles.css
+assets/js/cube.js
