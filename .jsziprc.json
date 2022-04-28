@@ -1,0 +1,19 @@
+{
+  "compressionLevel": 9,
+  "dereferenceLinks": true,
+  "entries": [
+    "assets/",
+    "index.html",
+    "manifest.toml",
+    "icon.png",
+    "webxdc.js",
+    "upup.min.js",
+    "upup.sw.min.js"
+  ],
+  "force": true,
+  "ignoreEntries": ["*.map", "assets/icons"],
+  "mode": "add",
+  "outputEntry": "cube.xdc",
+  "quiet": false,
+  "verbose": false
+}

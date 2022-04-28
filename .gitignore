@@ -4,3 +4,12 @@ node_modules/
 *.sublime-workspace
 
 export/
+dist/
+
+*.xdc
+*.txt
+
+// created files
+assets/css/styles.css
+assets/css/styles.css.map
+assets/js/cube.js
