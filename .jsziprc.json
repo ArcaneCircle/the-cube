@@ -2,16 +2,16 @@
   "compressionLevel": 9,
   "dereferenceLinks": true,
   "entries": [
-    "assets/js/cube.js",
-    "assets/js/three.js",
+    "assets/",
     "index.html",
     "manifest.toml",
     "icon.png",
-    "assets/css/styles.css",
-    "webxdc.js"
+    "webxdc.js",
+    "upup.min.js",
+    "upup.sw.min.js"
   ],
   "force": true,
-  "ignoreEntries": ["*.map"],
+  "ignoreEntries": ["*.map", "assets/icons"],
   "mode": "add",
   "outputEntry": "cube.xdc",
   "quiet": false,
