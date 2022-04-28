@@ -12,6 +12,7 @@
     "dev": "vite --host --open",
     "prebuild": "vite build",
     "build": "pnpx jszip-cli -c .jsziprc.json",
+    "xdc": "pnpx jszip-cli -c .jsziprc.json",
     "preview": "vite preview"
   },
   "repository": {
