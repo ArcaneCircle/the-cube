@@ -1,0 +1,9 @@
+name = "The Cube v0.99.2"
+
+[store]
+id="com.github.M4ss1ck.rainbow"
+version_name=0.99
+version_code=1
+author="M4ss1ck"
+author_email="massick@systemli.org"
+description="A Rubik's Cube Game for Delta Chat"
