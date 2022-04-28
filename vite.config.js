@@ -2,11 +2,15 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
+    target: "esnext",
     rollupOptions: {
-      external: [
-        //"webxdc.js", // ignore react stuff
-        "assets/css/styles.css",
-      ],
+      input: {
+        cube: "./src/js/Game.js",
+      },
+      output: {
+        entryFileNames: "[name].js",
+        dir: "./assets/js/",
+      },
     },
   },
 });
