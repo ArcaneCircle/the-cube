@@ -2,13 +2,11 @@ lockfileVersion: 5.3
 
 specifiers:
   '@ffflorian/jszip-cli': ^3.1.6
-  rollup-plugin-sass: ^1.2.12
   sass: ^1.51.0
   vite: ^2.9.6
 
 devDependencies:
   '@ffflorian/jszip-cli': 3.1.6
-  rollup-plugin-sass: 1.2.12
   sass: 1.51.0
   vite: 2.9.6_sass@1.51.0
 
@@ -46,21 +44,6 @@ packages:
       jszip: 3.7.1
       logdown: 3.3.1
       progress: 2.0.3
-    dev: true
-
-  /@rollup/pluginutils/3.1.0:
-    resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
-    engines: {node: '>= 8.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0
-    dependencies:
-      '@types/estree': 0.0.39
-      estree-walker: 1.0.1
-      picomatch: 2.3.1
-    dev: true
-
-  /@types/estree/0.0.39:
-    resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -372,10 +355,6 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: true
 
-  /estree-walker/1.0.1:
-    resolution: {integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==}
-    dev: true
-
   /fill-range/7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
     engines: {node: '>=8'}
@@ -625,17 +604,6 @@ packages:
       is-core-module: 2.9.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
-    dev: true
-
-  /rollup-plugin-sass/1.2.12:
-    resolution: {integrity: sha512-LD1LwKOGRFwg42PsSsOjYwYlt6B+YuGTA0yjgZiVTfx/sXBr8FBjX97YEPVW6Z/lNKRsxP+xufFONp2ADOWkVQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      '@rollup/pluginutils': 3.1.0
-      resolve: 1.22.0
-      sass: 1.51.0
-    transitivePeerDependencies:
-      - rollup
     dev: true
 
   /rollup/2.70.2:

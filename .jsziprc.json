@@ -5,10 +5,7 @@
     "assets/",
     "index.html",
     "manifest.toml",
-    "icon.png",
-    "webxdc.js",
-    "upup.min.js",
-    "upup.sw.min.js"
+    "icon.png"
   ],
   "force": true,
   "ignoreEntries": ["*.map", "assets/icons"],
