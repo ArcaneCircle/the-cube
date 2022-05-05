@@ -13,7 +13,6 @@
     "dev": "vite --host --open",
     "prebuild": "sass src/scss:assets/css && vite build",
     "build": "pnpx jszip-cli -c .jsziprc.json",
-    "xdc": "pnpx jszip-cli -c .jsziprc.json",
     "css": "sass --watch src/scss:dist/css",
     "preview": "vite preview"
   },
