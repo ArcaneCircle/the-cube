@@ -1,7 +1,7 @@
 name = "The Cube v0.99"
 
 [store]
-id="com.github.M4ss1ck.the-cube"
+id="com.github.M4ss1ck.cube"
 version_name=0.99
 version_code=1
 author="M4ss1ck"
