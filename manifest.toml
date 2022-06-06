@@ -1,9 +1,2 @@
-name = "The Cube v0.99"
-
-[store]
-id="com.github.M4ss1ck.cube"
-version_name=0.99
-version_code=1
-author="M4ss1ck"
-author_email="massick@systemli.org"
-description="A Rubik's Cube Game for Delta Chat"
+name = "The Cube v1.0"
+source_code_url = "https://github.com/webxdc/the-cube.xdc"

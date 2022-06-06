@@ -1,29 +1,16 @@
 {
-  "name": "the_cube",
-  "version": "1.0.0",
-  "description": "A Rubik's Cube Game for Delta Chat",
-  "main": "",
-  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@6.32.3",
+  "scripts": {
+    "dev": "vite --host --open",
+    "prebuild": "vite build && sass src/scss:assets/css",
+    "build": "jszip-cli -c jszip.config.json",
+    "css": "sass --watch src/scss:assets/css",
+    "preview": "vite preview"
+  },
   "devDependencies": {
     "@ffflorian/jszip-cli": "^3.1.6",
     "sass": "^1.51.0",
-    "vite": "^2.9.6"
-  },
-  "scripts": {
-    "dev": "vite --host --open",
-    "prebuild": "sass src/scss:assets/css && vite build",
-    "build": "pnpx jszip-cli -c .jsziprc.json",
-    "css": "sass --watch src/scss:dist/css",
-    "preview": "vite preview"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/bsehovac/bsehovac.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bsehovac/bsehovac.github.io/issues"
-  },
-  "homepage": "https://github.com/M4ss1ck/webxdc-cube/blob/master/README.md"
+    "vite": "^2.9.9"
+  }
 }

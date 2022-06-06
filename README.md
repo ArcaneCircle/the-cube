@@ -2,9 +2,15 @@
 
 A Rubik's Cube Game for Delta Chat
 
-## How to build the game
+## Building
 
-Just run the `build` script (`npm run build`, `yarn build` or `pnpm build`) and you will get a `.xdc` file in the root of the project, then send that file in any chat to play.
+```
+pnpm i
+pnpm build
+```
+
+A `.xdc` file will be generated in the `dist` folder, then just send it in any chat
+and you should be able to play the game.
 
 
 ## Credits

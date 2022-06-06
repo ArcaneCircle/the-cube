@@ -1,6 +1,6 @@
+.pnpm-debug.log
 .DS_Store
 node_modules/
-
 *.sublime-workspace
 
 export/
@@ -9,7 +9,7 @@ dist/
 *.xdc
 *.txt
 
-// created files
+// generated files
 assets/css/styles.css
 assets/css/styles.css.map
 assets/js/cube.js
