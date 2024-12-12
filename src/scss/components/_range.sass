@@ -1,3 +1,5 @@
+@use "../mixins/inset"
+
 .range
   position: relative
   width: 14em
@@ -94,7 +96,7 @@
             background: transparent
 
             &:after
-              +inset
+              +inset.inset
               content: ''
               opacity: 0.5
 

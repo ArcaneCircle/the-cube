@@ -1,3 +1,5 @@
+import "../scss/styles.sass";
+
 import { World } from "./World.js";
 import { Cube } from "./Cube.js";
 import { Controls } from "./Controls.js";

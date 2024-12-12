@@ -5,11 +5,8 @@ node_modules/
 
 export/
 dist/
+dist-xdc/
 
 *.xdc
 *.txt
-
-// generated files
-assets/css/styles.css
-assets/css/styles.css.map
-assets/js/cube.js
+*~

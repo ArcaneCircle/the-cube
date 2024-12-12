@@ -1,3 +1,5 @@
+@use "../mixins/inset"
+
 .ui
   pointer-events: none
   color: #070d15
@@ -10,7 +12,7 @@
   &__theme,
   &__stats,
   &__buttons
-    +inset
+    +inset.inset
     overflow: hidden
 
   &__background
@@ -19,7 +21,7 @@
     background: #d1d5db
 
     &:after
-      +inset
+      +inset.inset
       content: ''
       background-image: linear-gradient(to bottom, rgba(#fff, 1) 50%, rgba(#fff, 0) 100%)
 
