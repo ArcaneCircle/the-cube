@@ -102,7 +102,7 @@ class Game {
       setTimeout(() => this.transition.title(SHOW), 700);
       setTimeout(
         () => this.transition.buttons(BUTTONS.Menu, BUTTONS.None),
-        1000
+        1000,
       );
     }, 500);
   }
@@ -130,7 +130,7 @@ class Game {
           this.stats(HIDE);
         }
       },
-      false
+      false,
     );
 
     this.controls.onMove = () => {
@@ -209,7 +209,7 @@ class Game {
 
       setTimeout(
         () => this.transition.title(SHOW),
-        this.transition.durations.zoom - 1000
+        this.transition.durations.zoom - 1000,
       );
 
       this.playing = false;
@@ -272,7 +272,7 @@ class Game {
       setTimeout(() => this.transition.preferences(SHOW), 1000);
       setTimeout(() => {
         const gameCubeData = JSON.parse(
-          localStorage.getItem("theCube_savedState")
+          localStorage.getItem("theCube_savedState"),
         );
 
         if (!gameCubeData) {
@@ -336,7 +336,7 @@ class Game {
         size: size,
       };
       const info = `${name} solved a ${size}x${size}x${size} cube in ${this.scores.convertTime(
-        this.timer.deltaTime
+        this.timer.deltaTime,
       )}! Awesome!`;
       window.webxdc.sendUpdate({ payload: payload, info: info }, info);
 

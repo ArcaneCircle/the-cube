@@ -18,118 +18,103 @@ const CTRL = [
 ];
 
 class Keyboard {
-
-  constructor( game ) {
-
+  constructor(game) {
     this.game = game;
     this.ctrl = false;
 
-    this.keydown = this.keydown.bind( this );
-    this.keyup = this.keyup.bind( this );
+    this.keydown = this.keydown.bind(this);
+    this.keyup = this.keyup.bind(this);
 
-    window.addEventListener( 'keydown', this.keydown, false );
-    window.addEventListener( 'keyup', this.keyup, false );
+    window.addEventListener("keydown", this.keydown, false);
+    window.addEventListener("keyup", this.keyup, false);
 
-    const dbg = document.querySelector('#dbg');
+    const dbg = document.querySelector("#dbg");
 
     const animate = () => {
+      dbg.innerHTML = this.ctrl ? this.ctrl : "";
 
-      dbg.innerHTML = ( this.ctrl ) ? this.ctrl : '';
-
-      requestAnimationFrame( animate );
-
-    }
+      requestAnimationFrame(animate);
+    };
 
     animate();
-
   }
 
-  keydown( e ) {
-
+  keydown(e) {
     const { keyCode } = e;
     const { ctrl, game } = this;
     // const {  }
 
-    if ( CTRL.includes( keyCode ) ) {
-
+    if (CTRL.includes(keyCode)) {
       this.ctrl = keyCode;
-
     }
 
-    if ( ARROW.includes( keyCode) && ctrl !== false ) {
+    if (ARROW.includes(keyCode) && ctrl !== false) {
+      let face = false,
+        modifier = false;
 
-      let face = false, modifier = false;
+      if (ctrl === 65) {
+        // A
 
-      if ( ctrl === 65 ) { // A
-
-        face = 'L';
+        face = "L";
         if (keyCode === 38) modifier = "'"; // UP
-        if (keyCode === 40) modifier = ''; // DOWN
-
+        if (keyCode === 40) modifier = ""; // DOWN
       }
 
-      if ( ctrl === 68 ) { // D
+      if (ctrl === 68) {
+        // D
 
-        face = 'R';
-        if (keyCode === 38) modifier = ''; // UP
+        face = "R";
+        if (keyCode === 38) modifier = ""; // UP
         if (keyCode === 40) modifier = "'"; // DOWN
-
       }
 
-      if ( ctrl === 87 ) { // W
+      if (ctrl === 87) {
+        // W
 
-        face = 'U';
-        if (keyCode === 37) modifier = ''; // LEFT
+        face = "U";
+        if (keyCode === 37) modifier = ""; // LEFT
         if (keyCode === 39) modifier = "'"; // RIGHT
-
       }
 
-      if ( ctrl === 83 ) { // S
+      if (ctrl === 83) {
+        // S
 
-        face = 'D';
+        face = "D";
         if (keyCode === 37) modifier = "'"; // LEFT
-        if (keyCode === 39) modifier = ''; // RIGHT
-
+        if (keyCode === 39) modifier = ""; // RIGHT
       }
 
-      if ( ctrl === 81 ) { // Q
+      if (ctrl === 81) {
+        // Q
 
-        face = 'F';
+        face = "F";
         if (keyCode === 37) modifier = "'"; // LEFT
-        if (keyCode === 39) modifier = ''; // RIGHT
-
+        if (keyCode === 39) modifier = ""; // RIGHT
       }
 
-      if ( ctrl === 69 ) { // E
+      if (ctrl === 69) {
+        // E
 
-        face = 'B';
-        if (keyCode === 37) modifier = ''; // LEFT
+        face = "B";
+        if (keyCode === 37) modifier = ""; // LEFT
         if (keyCode === 39) modifier = "'"; // RIGHT
-
       }
 
-      if ( face === false || modifier === false ) return;
+      if (face === false || modifier === false) return;
 
-      const convertedMove = game.scrambler.convertMove( face + modifier );
-      game.controls.execute( convertedMove, () => {} );
-
+      const convertedMove = game.scrambler.convertMove(face + modifier);
+      game.controls.execute(convertedMove, () => {});
     }
-
   }
 
-  keyup( e ) {
-
+  keyup(e) {
     const { keyCode } = e;
     const { ctrl } = this;
 
-    if ( ctrl == keyCode ) {
-
+    if (ctrl == keyCode) {
       this.ctrl = false;
-
     }
-
   }
-
 }
 
 export { Keyboard };

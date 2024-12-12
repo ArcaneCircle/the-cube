@@ -78,7 +78,7 @@ class Scores {
     if (data.scores.length < count) return 0;
 
     return this.convertTime(
-      data.scores.slice(-count).reduce((a, b) => a + b, 0) / count
+      data.scores.slice(-count).reduce((a, b) => a + b, 0) / count,
     );
   }
 
